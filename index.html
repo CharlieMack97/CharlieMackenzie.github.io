@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Charlie Mackenzie Portfolio</h1>
+
+<p>Welcome to my portfolio website! Here you can find information about my projects, skills, and experience. Feel free to explore and learn more about me.</p>
+<em>Note: This is a sample portfolio website created for demonstration purposes.</em>
+
+<button id="myButton">Click Me</button>
+<script src="script.js"></script>
+<h2>About Me</h2>
+<p>Hi, I'm Charlie Mackenzie</p>. 
+I am a passionate cheese man</p>
+
+<h3> university Project</h3>
+<style>
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        animation: fadeSlideUp 1.5s ease-out forwards;
+    }
+
+ @keyframes fadeSlideUp {
+        0% {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
+<style>
+    .card {
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        animation: wobble 0.6s ease;
+    }
+    @keyframes wobble {
+        0%   { transform: rotate(0deg); }
+        15%  { transform: rotate(-5deg); }
+        30%  { transform: rotate(5deg); }
+        45%  { transform: rotate(-4deg); }
+        60%  { transform: rotate(4deg); }
+        75%  { transform: rotate(-2deg); }
+        100% { transform: rotate(0deg); }
+    }
+</style>
+<div class="container">
+    <div class="card">
+        <img src="gif/dancingplebs.gif" alt="Dancing Image" width="150" height="100">
+        <h2>Crabbits:Galactink</h2>
+        <p>This is a description of the project.</p>
+    </div>
+    
+    <div class="card">
+        <img src="gif/dancingplebs.gif" alt="Dancing Image" width="150" height="100">
+        <h2>Crabbits:Galactink</h2> 
+        <p>This is a description of the project.</p>
+    </div>
+</div>
+
+</body>
+</html>

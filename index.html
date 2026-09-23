@@ -7,12 +7,73 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<style>
+ul {
+    display: flex;
+    list-style-type:none ;
+    margin-top: 0;
+    padding:0;
+    overflow: hidden;
+    background-color: rgba(8, 180, 180, 0);
+    justify-content: space-evenly;
+    text-decoration-line: none;
+}
+ul li a {
+    text-decoration: none;
+}
+li{
+    
+    display:inline;
+    padding: 10px;
+    font-size: 2rem;
+    text-decoration-line: none;
+    background-color: rgba(5, 65, 65, 0.726);
+    border-radius:  80px;
+}
+li:hover{
+    background-color: rgba(46, 158, 158, 0.9);
+}
+</style>
+<ul>
+
+<li><a href="default.asp">Home </a></li>
+<li><a href="default.asp">Jams </a></li>
+<li><a href="default.asp">Uni </a></li>
+<li><a href="default.asp">Hobbies </a></li>
+</ul>
 <h1>Charlie Mackenzie Portfolio</h1>
 
 <p>Welcome to my portfolio website! Here you can find information about my projects, skills, and experience. Feel free to explore and learn more about me.</p>
 <em>Note: This is a sample portfolio website created for demonstration purposes.</em>
+<style>
+.button {
+    background-color: #62e2f3; /* Green */
+    border: none;
+    color: rgb(10, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
 
-<button id="myButton">Click Me</button>
+}
+.button:hover {
+    background-color: #091c83;
+}
+.button:active{
+
+    animation: buttonPress 0.2s;
+    
+}
+    @keyframes buttonPress {
+        0% { transform: scale(1); }
+        50% { transform: scale(0.65); }
+        100% { transform: scale(1); }
+    }
+</style>
+<a href="#" class="button">Click me</a>
 <script src="script.js"></script>
 <h2>About Me</h2>
 <p>Hi, I'm Charlie Mackenzie</p>. 
@@ -59,17 +120,18 @@ I am a passionate cheese man</p>
         100% { transform: rotate(0deg); }
     }
 </style>
+
 <div class="container">
     <div class="card">
-        <img src="gif/dancingplebs.gif" alt="Dancing Image" width="150" height="100">
-        <h2>Crabbits:Galactink</h2>
-        <p>This is a description of the project.</p>
+        <img src="dancingplebs.gif" alt="Dancing Image" width="150" height="100">
+        <h2>CMP301:Games Engine</h2>
+        <p>This was my third university project where i designed and developed a simple games engine using C++.</p>
     </div>
     
     <div class="card">
-        <img src="gif/dancingplebs.gif" alt="Dancing Image" width="150" height="100">
-        <h2>Crabbits:Galactink</h2> 
         <p>This is a description of the project.</p>
+        <h2>Crabbits:Galactink</h2> 
+        <img src="dancingplebs.gif" alt="Dancing Image" width="150" height="100">
     </div>
 </div>
 
